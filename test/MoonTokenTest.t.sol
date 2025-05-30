@@ -20,7 +20,7 @@ contract MoonTokenTest is Test {
     }
 
     function testTransfer() public {
-        uint256 transferAmount = 100 * 10 ** 18;
+        uint256 transferAmount = 100000 * 10 ** 18;
         moonToken.transfer(user1, transferAmount);
         assertEq(moonToken.balanceOf(user1), transferAmount, "User1 should receive the correct amount");
     }
